@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @theme inline {
@@ -26,25 +26,27 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f8f8f8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
-  border-radius: 4px;
+  background: #d1d5db;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a8a8a8;
+  background: #9ca3af;
 }
 
 /* Dark mode scrollbar */
@@ -62,17 +64,14 @@ body {
   }
 }
 
-/* Progress animation */
-@keyframes progress {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(var(--rotation));
-  }
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-/* Fade in animation */
+/* Custom animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -84,6 +83,66 @@ body {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Text selection */
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Focus styles */
+button:focus,
+a:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-black text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply border border-black text-black px-8 py-4 text-lg font-medium hover:bg-black hover:text-white transition-all duration-300;
+}
+
+/* Progress animation */
+@keyframes progress {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(var(--rotation));
+  }
 }

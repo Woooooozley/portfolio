@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Woojae Portfolio - Frontend Developer",
-  description: "프론트엔드 개발자 우재의 포트폴리오 웹사이트입니다. React, Next.js, TypeScript를 활용한 프로젝트들을 확인해보세요.",
-  keywords: ["프론트엔드", "개발자", "React", "Next.js", "TypeScript", "포트폴리오"],
+  title: "WOOJAE - Frontend Developer",
+  description: "Frontend developer specializing in modern web applications. Based in Seoul, working remote. Let's create something extraordinary together.",
+  keywords: ["frontend", "developer", "React", "Next.js", "TypeScript", "portfolio", "web applications"],
   authors: [{ name: "Woojae" }],
   creator: "Woojae",
   publisher: "Woojae",
@@ -26,25 +26,25 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://your-domain.vercel.app'),
   openGraph: {
-    title: "Woojae Portfolio - Frontend Developer",
-    description: "프론트엔드 개발자 우재의 포트폴리오 웹사이트입니다.",
+    title: "WOOJAE - Frontend Developer",
+    description: "Frontend developer specializing in modern web applications. Based in Seoul, working remote.",
     url: 'https://your-domain.vercel.app',
-    siteName: 'Woojae Portfolio',
+    siteName: 'WOOJAE Portfolio',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Woojae Portfolio',
+        alt: 'WOOJAE Portfolio',
       },
     ],
-    locale: 'ko_KR',
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Woojae Portfolio - Frontend Developer",
-    description: "프론트엔드 개발자 우재의 포트폴리오 웹사이트입니다.",
+    title: "WOOJAE - Frontend Developer",
+    description: "Frontend developer specializing in modern web applications. Based in Seoul, working remote.",
     images: ['/og-image.png'],
   },
   robots: {
