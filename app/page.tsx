@@ -30,11 +30,6 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-tight">
               Hello, I&apos;m Woojae Lee
             </h1>
-            <div className="mt-12">
-              <button className="bg-black text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors duration-300">
-                Get for free
-              </button>
-            </div>
           </div>
         </div>
       </section>

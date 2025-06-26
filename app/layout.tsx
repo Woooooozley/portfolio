@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pearl - Branding & Product Design",
-  description: "Discover the essence of Pearl, a free Framer template. Let's shape your brand into a masterpiece together.",
-  keywords: ["branding", "product design", "UX/UI", "framer template", "portfolio", "design"],
-  authors: [{ name: "Dawid Pietrasiak" }],
-  creator: "Dawid Pietrasiak",
-  publisher: "Dawid Pietrasiak",
+  title: "Woojae Lee | Portfolio",
+  description: "Hello, I'm Woojae Lee. Welcome to my portfolio showcasing my work in design and development.",
+  keywords: ["portfolio", "design", "development", "Woojae Lee", "creative"],
+  authors: [{ name: "Woojae Lee" }],
+  creator: "Woojae Lee",
+  publisher: "Woojae Lee",
   formatDetection: {
     email: false,
     address: false,
@@ -26,16 +26,16 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://your-domain.vercel.app'),
   openGraph: {
-    title: "Pearl - Branding & Product Design",
-    description: "Discover the essence of Pearl, a free Framer template. Let's shape your brand into a masterpiece together.",
+    title: "Woojae Lee | Portfolio",
+    description: "Hello, I'm Woojae Lee. Welcome to my portfolio showcasing my work in design and development.",
     url: 'https://your-domain.vercel.app',
-    siteName: 'Pearl Portfolio',
+    siteName: 'Woojae Lee Portfolio',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Pearl Portfolio',
+        alt: 'Woojae Lee Portfolio',
       },
     ],
     locale: 'en_US',
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Pearl - Branding & Product Design",
-    description: "Discover the essence of Pearl, a free Framer template. Let's shape your brand into a masterpiece together.",
+    title: "Woojae Lee | Portfolio",
+    description: "Hello, I'm Woojae Lee. Welcome to my portfolio showcasing my work in design and development.",
     images: ['/og-image.png'],
   },
   robots: {
