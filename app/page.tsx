@@ -27,7 +27,7 @@ export default function Home() {
               WOOJAE
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Hello, I'm a frontend developer specializing in modern web applications with 5 years of expertise — based in Seoul, working remote. Let's create!
+              Hello, I&#39;m a frontend developer specializing in modern web applications with 5 years of expertise — based in Seoul, working remote. Let&#39;s create!
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function Home() {
                 I collaborate with businesses of all sizes worldwide, using the latest technologies. My applications have also earned multiple recognitions.
               </p>
               <p className="text-xl leading-relaxed text-gray-600">
-                I'm dedicated to crafting beautiful and highly functional web applications that seamlessly align with my clients' unique needs and long-term goals.
+                I&#39;m dedicated to crafting beautiful and highly functional web applications that seamlessly align with my clients&#39; unique needs and long-term goals.
               </p>
             </div>
             <div className="aspect-square bg-gray-100 rounded-lg flex items-center justify-center">
@@ -139,7 +139,7 @@ export default function Home() {
             Curious about what we can create together?
           </h2>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            Let's bring something extraordinary to life!
+            Let&#39;s bring something extraordinary to life!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
