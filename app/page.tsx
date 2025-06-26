@@ -28,7 +28,7 @@ export default function Home() {
               <span className="text-lg text-gray-600">Branding · Product Design</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-tight">
-              Discover the essence of Pearl, a free Framer template. Let&apos;s shape your brand into a masterpiece together.
+              Hello, I&apos;m Woojae Lee
             </h1>
             <div className="mt-12">
               <button className="bg-black text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors duration-300">
