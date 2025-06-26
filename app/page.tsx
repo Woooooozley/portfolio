@@ -27,12 +27,6 @@ export default function Home() {
               LEEWOOJAE
             </h1>
             <div className="space-y-6 max-w-4xl mx-auto">
-              <h3 className="text-2xl md:text-3xl text-gray-700 leading-relaxed">
-                안녕하세요. 2022년부터 디자이너로 활동하고 있는 프로덕트 디자이너 이우재입니다.
-              </h3>
-              <h3 className="text-2xl md:text-3xl text-gray-700 leading-relaxed">
-                is a product designer who has been working as a designer since 2022.
-              </h3>
             </div>
           </div>
         </div>
@@ -43,14 +37,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <div>
-              <h4 className="text-xl leading-relaxed text-gray-700 mb-8">
-                모든 디자인에 정답은 없지만, 오답은 분명히 있다고 생각합니다. 프로덕트 디자인에서의 오답은 유저의 불편함으로 이어집니다. 눈에 보이지 않는 오답까지 피하기 위해 유저의 경험에 한 걸음 더 몰입하고, 나아가 산업 전반에 걸쳐 이해도를 높이는 것이 프로덕트 디자이너의 역할이라고 생각합니다.
-              </h4>
             </div>
             <div>
-              <h4 className="text-xl leading-relaxed text-gray-700">
-                There is no right answer for all designs, but I think there are definitely wrong answers. Wrong answers in product design lead to inconvenience for users. I think the role of a product designer is to immerse one step further in the user experience and further increase understanding across the industry to avoid even invisible wrong answers.
-              </h4>
             </div>
           </div>
         </div>
