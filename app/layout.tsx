@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LEEWOOJAE - Product Designer",
-  description: "Product designer who has been working as a designer since 2022. Based in Seoul, Korea. Specializing in UX/UI design, branding, and mobile applications.",
-  keywords: ["product designer", "UX/UI", "branding", "mobile app", "portfolio", "design", "Seoul"],
-  authors: [{ name: "Lee Woojae" }],
-  creator: "Lee Woojae",
-  publisher: "Lee Woojae",
+  title: "Pearl - Branding & Product Design",
+  description: "Discover the essence of Pearl, a free Framer template. Let's shape your brand into a masterpiece together.",
+  keywords: ["branding", "product design", "UX/UI", "framer template", "portfolio", "design"],
+  authors: [{ name: "Dawid Pietrasiak" }],
+  creator: "Dawid Pietrasiak",
+  publisher: "Dawid Pietrasiak",
   formatDetection: {
     email: false,
     address: false,
@@ -26,25 +26,25 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://your-domain.vercel.app'),
   openGraph: {
-    title: "LEEWOOJAE - Product Designer",
-    description: "Product designer who has been working as a designer since 2022. Based in Seoul, Korea.",
+    title: "Pearl - Branding & Product Design",
+    description: "Discover the essence of Pearl, a free Framer template. Let's shape your brand into a masterpiece together.",
     url: 'https://your-domain.vercel.app',
-    siteName: 'LEEWOOJAE Portfolio',
+    siteName: 'Pearl Portfolio',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'LEEWOOJAE Portfolio',
+        alt: 'Pearl Portfolio',
       },
     ],
-    locale: 'ko_KR',
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "LEEWOOJAE - Product Designer",
-    description: "Product designer who has been working as a designer since 2022. Based in Seoul, Korea.",
+    title: "Pearl - Branding & Product Design",
+    description: "Discover the essence of Pearl, a free Framer template. Let's shape your brand into a masterpiece together.",
     images: ['/og-image.png'],
   },
   robots: {
@@ -66,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

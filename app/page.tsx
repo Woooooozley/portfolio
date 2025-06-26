@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,12 +9,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold tracking-tight">LEEWOOJAE</h1>
+              <h1 className="text-2xl font-bold tracking-tight">Pearl</h1>
             </div>
             <div className="hidden md:flex items-center space-x-12">
-              <a href="#work" className="text-lg hover:text-gray-600 transition-colors duration-300">Work</a>
-              <a href="#about" className="text-lg hover:text-gray-600 transition-colors duration-300">About</a>
-              <a href="#contact" className="text-lg hover:text-gray-600 transition-colors duration-300">Contact</a>
+              <Link href="#work" className="text-lg hover:text-gray-600 transition-colors duration-300">Work</Link>
+              <Link href="#about" className="text-lg hover:text-gray-600 transition-colors duration-300">About</Link>
+              <Link href="#contact" className="text-lg hover:text-gray-600 transition-colors duration-300">Contact</Link>
             </div>
           </div>
         </div>
@@ -23,22 +24,16 @@ export default function Home() {
       <section className="pt-32 pb-20 px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <h1 className="text-8xl md:text-9xl font-bold tracking-tight mb-8">
-              LEEWOOJAE
+            <div className="mb-8">
+              <span className="text-lg text-gray-600">Branding · Product Design</span>
+            </div>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-tight">
+              Discover the essence of Pearl, a free Framer template. Let&apos;s shape your brand into a masterpiece together.
             </h1>
-            <div className="space-y-6 max-w-4xl mx-auto">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="py-20 px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div>
-            </div>
-            <div>
+            <div className="mt-12">
+              <button className="bg-black text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors duration-300">
+                Get for free
+              </button>
             </div>
           </div>
         </div>
@@ -50,43 +45,49 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "마나부 ManaBoo",
-                period: "2022.09 ~ present",
+                title: "Fintech Dello Banking App",
+                client: "Booking Corp.",
                 image: "/next.svg",
-                category: "Main Project"
+                category: "Main Project",
+                href: "/work/dellobank"
               },
               {
                 title: "Dazzle © Branding",
-                period: "2023.01 ~ 2023.06",
+                client: "Dazzle Inc.",
                 image: "/vercel.svg",
-                category: "Dazzle Inc."
+                category: "Branding",
+                href: "/work/dazzle"
               },
               {
                 title: "Healthcare Mobile App",
-                period: "2023.03 ~ 2023.08",
+                client: "Your Client Name",
                 image: "/globe.svg",
-                category: "Your Client Name"
+                category: "Mobile App",
+                href: "/work/healthcare"
               },
               {
                 title: "Technical Infographic",
-                period: "2023.06 ~ 2023.09",
+                client: "Tech Bank Client",
                 image: "/next.svg",
-                category: "Tech Bank Client"
+                category: "Design",
+                href: "/work/infographic"
               },
               {
                 title: "Extend & Support - App Plugin",
-                period: "2023.09 ~ 2023.12",
+                client: "Client Name",
                 image: "/vercel.svg",
-                category: "Client Name"
+                category: "Plugin",
+                href: "/work/plugin"
               },
               {
                 title: "E-commerce Platform",
-                period: "2024.01 ~ 2024.04",
+                client: "Startup Client",
                 image: "/globe.svg",
-                category: "Startup Client"
+                category: "Web App",
+                href: "/work/ecommerce"
               }
             ].map((project, index) => (
-              <div key={index} className="group cursor-pointer">
+              <Link key={index} href={project.href} className="group cursor-pointer">
                 <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden mb-4 transition-transform duration-500 group-hover:scale-105">
                   <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                     <Image
@@ -102,10 +103,10 @@ export default function Home() {
                   <h3 className="text-xl font-semibold mb-1 group-hover:text-gray-600 transition-colors duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-gray-500">{project.period}</p>
+                  <p className="text-sm text-gray-500">{project.client}</p>
                 </div>
                 <p className="text-gray-600">{project.category}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -153,8 +154,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 px-6 lg:px-8">
+      {/* About Section */}
+      <section id="about" className="py-20 px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Our Story</h2>
@@ -163,19 +164,12 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { number: "250+", label: "Projects completed", description: "Over 250 successful projects delivered with quality and care" },
-              { number: "100%", label: "Client satisfaction", description: "All of our clients are satisfied with our work and service" },
-              { number: "30", label: "Skilled Tradespeople", description: "Our team of 30 experts ensures top-quality results" },
-              { number: "3+", label: "Years experience", description: "Improving homes with expert craftsmanship for years" }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">{stat.number}</div>
-                <div className="text-lg font-semibold mb-2">{stat.label}</div>
-                <div className="text-sm text-gray-600">{stat.description}</div>
-              </div>
-            ))}
+          <div className="text-center">
+            <h3 className="text-2xl font-bold mb-8">About Us</h3>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              We are a team of passionate designers and developers dedicated to creating exceptional digital experiences. 
+              Our mission is to transform ideas into reality through innovative design solutions that make a difference.
+            </p>
           </div>
         </div>
       </section>
@@ -184,12 +178,7 @@ export default function Home() {
       <section id="contact" className="py-20 px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8">Contact</h2>
-            <div className="space-y-4 text-2xl">
-              <p className="font-semibold">woojae0711@naver.com</p>
-              <p className="font-semibold">+82 010 5236 0840</p>
-              <p className="font-semibold">In Seoul, Korea</p>
-            </div>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8">Let&apos;s start creating together</h2>
             <div className="mt-12">
               <button className="bg-black text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors duration-300">
                 Let&apos;s talk
@@ -203,7 +192,7 @@ export default function Home() {
       <footer className="py-12 px-6 lg:px-8 border-t border-gray-100">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 mb-4 md:mb-0">
-            2025 Portfolio by Lee Woojae
+            2023 Pearl Framer template crafted with love by Dawid Pietrasiak
           </div>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-600 hover:text-black transition-colors duration-300">Twitter</a>
