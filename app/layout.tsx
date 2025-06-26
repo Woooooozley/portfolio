@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WOOJAE - Frontend Developer",
-  description: "Frontend developer specializing in modern web applications. Based in Seoul, working remote. Let's create something extraordinary together.",
-  keywords: ["frontend", "developer", "React", "Next.js", "TypeScript", "portfolio", "web applications"],
-  authors: [{ name: "Woojae" }],
-  creator: "Woojae",
-  publisher: "Woojae",
+  title: "LEEWOOJAE - Product Designer",
+  description: "Product designer who has been working as a designer since 2022. Based in Seoul, Korea. Specializing in UX/UI design, branding, and mobile applications.",
+  keywords: ["product designer", "UX/UI", "branding", "mobile app", "portfolio", "design", "Seoul"],
+  authors: [{ name: "Lee Woojae" }],
+  creator: "Lee Woojae",
+  publisher: "Lee Woojae",
   formatDetection: {
     email: false,
     address: false,
@@ -26,25 +26,25 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://your-domain.vercel.app'),
   openGraph: {
-    title: "WOOJAE - Frontend Developer",
-    description: "Frontend developer specializing in modern web applications. Based in Seoul, working remote.",
+    title: "LEEWOOJAE - Product Designer",
+    description: "Product designer who has been working as a designer since 2022. Based in Seoul, Korea.",
     url: 'https://your-domain.vercel.app',
-    siteName: 'WOOJAE Portfolio',
+    siteName: 'LEEWOOJAE Portfolio',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'WOOJAE Portfolio',
+        alt: 'LEEWOOJAE Portfolio',
       },
     ],
-    locale: 'en_US',
+    locale: 'ko_KR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "WOOJAE - Frontend Developer",
-    description: "Frontend developer specializing in modern web applications. Based in Seoul, working remote.",
+    title: "LEEWOOJAE - Product Designer",
+    description: "Product designer who has been working as a designer since 2022. Based in Seoul, Korea.",
     images: ['/og-image.png'],
   },
   robots: {
@@ -66,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

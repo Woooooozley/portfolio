@@ -4,14 +4,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold tracking-tight">WOOJAE</h1>
+              <h1 className="text-2xl font-bold tracking-tight">LEEWOOJAE</h1>
             </div>
             <div className="hidden md:flex items-center space-x-12">
-              <a href="#works" className="text-lg hover:text-gray-600 transition-colors duration-300">Works</a>
+              <a href="#work" className="text-lg hover:text-gray-600 transition-colors duration-300">Work</a>
               <a href="#about" className="text-lg hover:text-gray-600 transition-colors duration-300">About</a>
               <a href="#contact" className="text-lg hover:text-gray-600 transition-colors duration-300">Contact</a>
             </div>
@@ -24,136 +24,189 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h1 className="text-8xl md:text-9xl font-bold tracking-tight mb-8">
-              WOOJAE
+              LEEWOOJAE
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Hello, I&#39;m a frontend developer specializing in modern web applications with 5 years of expertise — based in Seoul, working remote. Let&#39;s create!
-            </p>
+            <div className="space-y-6 max-w-4xl mx-auto">
+              <h3 className="text-2xl md:text-3xl text-gray-700 leading-relaxed">
+                안녕하세요. 2022년부터 디자이너로 활동하고 있는 프로덕트 디자이너 이우재입니다.
+              </h3>
+              <h3 className="text-2xl md:text-3xl text-gray-700 leading-relaxed">
+                is a product designer who has been working as a designer since 2022.
+              </h3>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Works Section */}
-      <section id="works" className="py-20 px-6 lg:px-8 bg-gray-50">
+      {/* About Section */}
+      <section id="about" className="py-20 px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">work.</h2>
-            <button className="text-lg text-gray-600 hover:text-black transition-colors duration-300">
-              Show More
-            </button>
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <h4 className="text-xl leading-relaxed text-gray-700 mb-8">
+                모든 디자인에 정답은 없지만, 오답은 분명히 있다고 생각합니다. 프로덕트 디자인에서의 오답은 유저의 불편함으로 이어집니다. 눈에 보이지 않는 오답까지 피하기 위해 유저의 경험에 한 걸음 더 몰입하고, 나아가 산업 전반에 걸쳐 이해도를 높이는 것이 프로덕트 디자이너의 역할이라고 생각합니다.
+              </h4>
+            </div>
+            <div>
+              <h4 className="text-xl leading-relaxed text-gray-700">
+                There is no right answer for all designs, but I think there are definitely wrong answers. Wrong answers in product design lead to inconvenience for users. I think the role of a product designer is to immerse one step further in the user experience and further increase understanding across the industry to avoid even invisible wrong answers.
+              </h4>
+            </div>
           </div>
-          
+        </div>
+      </section>
+
+      {/* Work Section */}
+      <section id="work" className="py-20 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
+                title: "마나부 ManaBoo",
+                period: "2022.09 ~ present",
+                image: "/next.svg",
+                category: "Main Project"
+              },
+              {
+                title: "Dazzle © Branding",
+                period: "2023.01 ~ 2023.06",
+                image: "/vercel.svg",
+                category: "Dazzle Inc."
+              },
+              {
+                title: "Healthcare Mobile App",
+                period: "2023.03 ~ 2023.08",
+                image: "/globe.svg",
+                category: "Your Client Name"
+              },
+              {
+                title: "Technical Infographic",
+                period: "2023.06 ~ 2023.09",
+                image: "/next.svg",
+                category: "Tech Bank Client"
+              },
+              {
+                title: "Extend & Support - App Plugin",
+                period: "2023.09 ~ 2023.12",
+                image: "/vercel.svg",
+                category: "Client Name"
+              },
+              {
                 title: "E-commerce Platform",
-                image: "/next.svg",
-                category: "Web Application"
-              },
-              {
-                title: "Task Management App",
-                image: "/vercel.svg",
-                category: "Mobile App"
-              },
-              {
-                title: "Portfolio Website",
+                period: "2024.01 ~ 2024.04",
                 image: "/globe.svg",
-                category: "Web Design"
-              },
-              {
-                title: "Dashboard System",
-                image: "/next.svg",
-                category: "Web Application"
-              },
-              {
-                title: "Social Media App",
-                image: "/vercel.svg",
-                category: "Mobile App"
-              },
-              {
-                title: "Landing Page",
-                image: "/globe.svg",
-                category: "Web Design"
+                category: "Startup Client"
               }
             ].map((project, index) => (
               <div key={index} className="group cursor-pointer">
-                <div className="aspect-[4/3] bg-white rounded-lg overflow-hidden mb-4 transition-transform duration-500 group-hover:scale-105">
-                  <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden mb-4 transition-transform duration-500 group-hover:scale-105">
+                  <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                     <Image
                       src={project.image}
                       alt={project.title}
                       width={120}
                       height={120}
-                      className="opacity-40 group-hover:opacity-60 transition-opacity duration-300"
+                      className="opacity-60 group-hover:opacity-80 transition-opacity duration-300"
                     />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <p className="text-gray-500">{project.category}</p>
+                <div className="mb-2">
+                  <h3 className="text-xl font-semibold mb-1 group-hover:text-gray-600 transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-gray-500">{project.period}</p>
+                </div>
+                <p className="text-gray-600">{project.category}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 px-6 lg:px-8">
+      {/* Services Section */}
+      <section className="py-20 px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">about.</h2>
-            <button className="text-lg text-gray-600 hover:text-black transition-colors duration-300">
-              Show More
-            </button>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Designing Success</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              See how we&apos;ve turned ideas into reality. Dive into the stories of successful product designs that make a difference.
+            </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-xl leading-relaxed text-gray-600 mb-8">
-                I collaborate with businesses of all sizes worldwide, using the latest technologies. My applications have also earned multiple recognitions.
-              </p>
-              <p className="text-xl leading-relaxed text-gray-600">
-                I&#39;m dedicated to crafting beautiful and highly functional web applications that seamlessly align with my clients&#39; unique needs and long-term goals.
-              </p>
-            </div>
-            <div className="aspect-square bg-gray-100 rounded-lg flex items-center justify-center">
-              <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">
-                WJ
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                title: "Branding",
+                services: ["Logo Design", "Brand Guidelines", "Collateral Design", "Rebranding Services"]
+              },
+              {
+                title: "UX/UI Designs",
+                services: ["User Research and Analysis", "Wireframing and Prototyping", "User Interface Design", "User Experience Testing", "Responsive Design Solutions"]
+              },
+              {
+                title: "Motion & Animation",
+                services: ["Motion Graphics Design", "Animated Explainer Videos", "Interactive Presentations"]
+              },
+              {
+                title: "Mobile",
+                services: ["iOS App Development", "Android App Development", "App Prototyping and Testing", "App Maintenance and Updates"]
+              }
+            ].map((service, index) => (
+              <div key={index} className="bg-white p-8 rounded-lg shadow-sm">
+                <h3 className="text-2xl font-bold mb-6">{service.title}</h3>
+                <ul className="space-y-3">
+                  {service.services.map((item, itemIndex) => (
+                    <li key={itemIndex} className="text-gray-600">• {item}</li>
+                  ))}
+                </ul>
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Our Story</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Explore our journey and learn what sets us apart in crafting impactful digital experiences.
+            </p>
           </div>
           
-          <div className="mt-16 flex space-x-8">
-            <a href="#" className="text-lg text-gray-600 hover:text-black transition-colors duration-300">LinkedIn</a>
-            <a href="#" className="text-lg text-gray-600 hover:text-black transition-colors duration-300">GitHub</a>
-            <a href="#" className="text-lg text-gray-600 hover:text-black transition-colors duration-300">Behance</a>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {[
+              { number: "250+", label: "Projects completed", description: "Over 250 successful projects delivered with quality and care" },
+              { number: "100%", label: "Client satisfaction", description: "All of our clients are satisfied with our work and service" },
+              { number: "30", label: "Skilled Tradespeople", description: "Our team of 30 experts ensures top-quality results" },
+              { number: "3+", label: "Years experience", description: "Improving homes with expert craftsmanship for years" }
+            ].map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl md:text-5xl font-bold mb-2">{stat.number}</div>
+                <div className="text-lg font-semibold mb-2">{stat.label}</div>
+                <div className="text-sm text-gray-600">{stat.description}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8">
-            Curious about what we can create together?
-          </h2>
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            Let&#39;s bring something extraordinary to life!
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-            <button className="bg-black text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors duration-300">
-              Get in Touch
-            </button>
-            <button className="border border-black text-black px-8 py-4 text-lg font-medium hover:bg-black hover:text-white transition-colors duration-300">
-              Available For Work
-            </button>
-          </div>
-          
-          <div className="space-y-4 text-lg">
-            <p>+82 (0)10 1234 5678</p>
-            <p className="text-gray-600">hello@woojae.com</p>
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8">Contact</h2>
+            <div className="space-y-4 text-2xl">
+              <p className="font-semibold">woojae0711@naver.com</p>
+              <p className="font-semibold">+82 010 5236 0840</p>
+              <p className="font-semibold">In Seoul, Korea</p>
+            </div>
+            <div className="mt-12">
+              <button className="bg-black text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors duration-300">
+                Let&apos;s talk
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -162,10 +215,12 @@ export default function Home() {
       <footer className="py-12 px-6 lg:px-8 border-t border-gray-100">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 mb-4 md:mb-0">
-            Designed & Developed by Woojae
+            2025 Portfolio by Lee Woojae
           </div>
-          <div className="text-gray-500">
-            All rights reserved, WOOJAE ©2024
+          <div className="flex space-x-6">
+            <a href="#" className="text-gray-600 hover:text-black transition-colors duration-300">Twitter</a>
+            <a href="#" className="text-gray-600 hover:text-black transition-colors duration-300">Dribbble</a>
+            <a href="#" className="text-gray-600 hover:text-black transition-colors duration-300">Instagram</a>
           </div>
         </div>
       </footer>
